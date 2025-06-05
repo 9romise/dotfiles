@@ -1,0 +1,11 @@
+[user]
+	name = Vida Xie
+	email = vida_2020@163.com
+[core]
+	autocrlf = input
+[http]
+	postbuffer=5242880000
+
+# config for specific directory
+# [includeIf "gitdir:~/xxx"]
+# 	path = "~/.gitconfig_xxx"
