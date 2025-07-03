@@ -3,19 +3,21 @@
     // theme
     "antfu.theme-vitesse",
     "Catppuccin.catppuccin-vsc-icons",
+    // check
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    // test
+    "vitest.explorer",
+    // dev helper
+    "vue.volar",
+    "antfu.unocss",
+    "meganrogge.template-string-converter",
+    "jaluik.dot-log",
+    "johnsoncodehk.vscode-tsconfig-helper",
     // useful
     "usernamehw.errorlens",
     "YoavBls.pretty-ts-errors",
     "alefragnani.project-manager",
-    "meganrogge.template-string-converter",
-    "johnsoncodehk.vscode-tsconfig-helper",
-    "dbaeumer.vscode-eslint",
-    "vitest.explorer",
-    "jaluik.dot-log",
-    "streetsidesoftware.code-spell-checker",
     "antfu.file-nesting",
-    // web dev
-    "vue.volar",
-    "antfu.unocss",
   ]
 }

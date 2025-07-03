@@ -22,15 +22,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # corepack
 export COREPACK_NPM_REGISTRY="https://registry.npmmirror.com"
-
-
-function proxy() {
-    export http_proxy=http://127.0.0.1:7897
-    export https_proxy=http://127.0.0.1:7897
-    echo -e "终端代理已开启。"
-}
-
-function unproxy(){
-    unset http_proxy https_proxy
-    echo -e "终端代理已关闭。"
-}
