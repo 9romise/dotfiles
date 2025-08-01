@@ -22,3 +22,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # corepack
 export COREPACK_NPM_REGISTRY="https://registry.npmmirror.com"
+
+alias nu="nup"
