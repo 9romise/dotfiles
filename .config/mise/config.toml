@@ -1,0 +1,11 @@
+[tools]
+node = "24"
+"npm:@antfu/ni" = "latest"
+
+[tasks.clean]
+description = "Cleanup cache"
+run = """
+npm cache clean --force
+pnpm store prune
+corepack cache clean
+"""
