@@ -8,4 +8,5 @@ run = """
 npm cache clean --force
 pnpm store prune
 corepack cache clean
+brew cleanup
 """
