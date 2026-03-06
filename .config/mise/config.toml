@@ -1,6 +1,18 @@
 [tools]
-node = "24"
+node = "latest"
+# bun = "latest"
+# python = "latest"
+# go = "latest"
+# rust = "latest"
 "npm:@antfu/ni" = "latest"
+"npm:taze" = "latest"
+
+[tasks.upgrade]
+description = "Upgrade tools"
+run = """
+brew upgrade
+mise upgrade
+"""
 
 [tasks.clean]
 description = "Cleanup cache"
