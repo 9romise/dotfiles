@@ -6,6 +6,8 @@ node = "latest"
 # rust = "latest"
 "npm:@antfu/ni" = "latest"
 "npm:taze" = "latest"
+"npm:actions-up" = "latest"
+"npm:bumpp" = "latest"
 
 [tasks.upgrade]
 description = "Upgrade tools"
