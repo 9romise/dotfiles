@@ -1,13 +1,17 @@
-# oh-my-zsh
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="spaceship"
-plugins=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-# https://ohmyz.sh/
-source $ZSH/oh-my-zsh.sh
+# zim
+# https://github.com/zimfw/zimfw
+ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+# Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated.
+if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]]; then
+  source /opt/homebrew/opt/zimfw/share/zimfw.zsh init
+fi
+# Initialize modules.
+source ${ZIM_HOME}/init.zsh
+
+# starship
+eval "$(starship init zsh)"
+# mise
+eval "$(mise activate zsh)"
 
 alias nu="nup"
 alias mu="mise run upgrade"
