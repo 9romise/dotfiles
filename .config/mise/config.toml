@@ -20,7 +20,7 @@ mise upgrade
 description = "Cleanup cache"
 run = """
 npm cache clean --force
-pnpm store prune
-corepack cache clean
+pnpm store prune 2>/dev/null || echo "  pnpm not installed, skipping"
+corepack cache clean 2>/dev/null || echo "  corepack not installed, skipping"
 brew cleanup
 """
