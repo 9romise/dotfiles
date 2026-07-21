@@ -19,5 +19,6 @@
     "YoavBls.pretty-ts-errors",
     "alefragnani.project-manager",
     "antfu.file-nesting",
+    "npmx-dev.vscode-npmx",
   ]
 }
