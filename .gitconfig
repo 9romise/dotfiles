@@ -6,12 +6,12 @@
 [http]
 	postbuffer = 5242880000
 [pull]
-  rebase = true
+	rebase = true
 [rebase]
-  autoStash = true
+	autoStash = true
 	missingCommitCheck = warn
 [log]
-  date = format:%Y-%m-%d %H:%M:%S
+	date = format:%Y-%m-%d %H:%M:%S
 
 # config for specific directory
 # [includeIf "gitdir:~/xxx"]
