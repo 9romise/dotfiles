@@ -19,6 +19,7 @@ pairs=(
   ".config/ghostty/config"
   ".config/mise/config.toml"
   ".config/AGENTS.md"
+  ".config/starship.toml"
   "Library/Developer/Xcode/UserData/KeyBindings/vscode.idekeybindings"
 )
 
