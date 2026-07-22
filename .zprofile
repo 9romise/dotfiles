@@ -9,3 +9,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # corepack (use china npm registry)
 export COREPACK_NPM_REGISTRY="https://registry.npmmirror.com"
+
+# rustup mirrors (china) — TUNA rewrites v2 manifest URLs, fastest components
+export RUSTUP_DIST_SERVER="https://mirrors.tuna.tsinghua.edu.cn/rustup"
+export RUSTUP_UPDATE_ROOT="https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup"

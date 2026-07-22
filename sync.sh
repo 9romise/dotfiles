@@ -20,6 +20,7 @@ pairs=(
   ".config/mise/config.toml"
   ".config/AGENTS.md"
   ".config/starship.toml"
+  ".cargo/config.toml"
   "Library/Developer/Xcode/UserData/KeyBindings/vscode.idekeybindings"
 )
 
