@@ -12,5 +12,6 @@ eval "$(starship init zsh)"
 eval "$(mise activate zsh)"
 
 # aliases
+alias c="clear"
 alias nu="nup"
 alias mu="mise run upgrade"
