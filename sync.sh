@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-DOTFILES="$HOME/Documents/GitHub/dotfiles"
+DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MODE="${1:-help}"
 
 BOLD=$(tput bold)
@@ -107,6 +107,7 @@ pick_files() {
     [ "${sel[$i]}" = "1" ] && selected+=("${pairs[$i]}")
   done
   [ ${#selected[@]} -eq 0 ] && selected=("${pairs[@]}")
+  return 0
 }
 
 status() {
@@ -129,7 +130,7 @@ status() {
       printf "  ${DIM}%s${NC}\n" "──── $f ────"
       printf "  ${DIM}${YELLOW}only in repo${NC}\n\n"
       ((only_repo++))
-    elif ! diff -q "$r" "$h" >/dev/null 2>&1; then
+    elif ! cmp -s "$r" "$h"; then
       printf "  ${DIM}%s${NC}\n" "──── $f ────"
       git diff --no-index --color=always "$r" "$h" 2>/dev/null | tail -n +5 | sed 's/^/    /' || true
       echo
